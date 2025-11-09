@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropagationRelayPatterns", "PropagationRelayPatterns\PropagationRelayPatterns.csproj", "{D05C5713-3AD2-4945-A444-9A2B04639383}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D05C5713-3AD2-4945-A444-9A2B04639383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D05C5713-3AD2-4945-A444-9A2B04639383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D05C5713-3AD2-4945-A444-9A2B04639383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D05C5713-3AD2-4945-A444-9A2B04639383}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18435D97-DF82-48D9-BC5F-4B85FF74C109}
+	EndGlobalSection
+EndGlobal

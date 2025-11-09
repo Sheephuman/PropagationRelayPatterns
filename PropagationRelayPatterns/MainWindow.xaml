@@ -1,0 +1,52 @@
+﻿<Window x:Class="PropagationRelayPatterns.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PropagationRelayPatterns"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- アニメーション選択ボタン群 -->
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <Button x:Name="ButtonA" Content="🐑 処理A：羊アニメ" Width="130" Height="35" Margin="0,0,10,0"
+                    Click="ButtonA_Click"/>
+            <Button x:Name="ButtonB" Content="🌀 処理B：文字降下" Width="130" Height="35" Margin="0,0,10,0"
+                    Click="ButtonB_Click"/>
+            <Button x:Name="ButtonC" Content="📜 処理C：テロップ" Width="130" Height="35" Margin="0,0,10,0"
+                    Click="ButtonC_Click"/>
+            <Button x:Name="ButtonD" Content="🗂 処理D：ファイルスキャン" Width="150" Height="35"
+                    Click="ButtonD_Click"/>
+        </StackPanel>
+
+        <!-- 実行系ボタン -->
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10" Grid.Row="1">
+            <Button x:Name="ExecuteButton" Content="▶ 実行" Width="100" Height="35" Click="ExecuteButton_Click"/>
+            <Button x:Name="StopButton" Content="⏹ 停止" Width="100" Height="35" Margin="10,0,0,0"
+                    Click="StopButton_Click"/>
+            <TextBlock x:Name="StatusText"
+                       Foreground="LightGray"
+                       VerticalAlignment="Center"
+                       Margin="20,0,0,0"
+                       Text="処理未選択"/>
+        </StackPanel>
+
+        <!-- 出力表示 -->
+       
+            <TextBox Grid.Row="2"  Background="#222" x:Name="TextOutput"
+                       FontFamily="Consolas"
+                       FontSize="18"
+                       TextChanged="TextOutput_TextChanged"
+                      Height="320"
+                       Foreground="LightGreen"
+                       TextWrapping="NoWrap"
+                       AcceptsReturn="True"
+                       Text="ここに出力されます。"/>       
+    </Grid>
+</Window>
