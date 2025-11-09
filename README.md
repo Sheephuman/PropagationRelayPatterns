@@ -1,5 +1,8 @@
-最も縛りの強いライセンス：GPL（GNU General Public License）v3を採用しました。
-さあ早くスターを付けるんだ。
+最も縛りの強いライセンス：GPL（GNU General Public License）v3を採用しました。</br>
+さあ早くスターを付けるんだ。</br>
+
+Visual Studio 2022,WPF , .net5.0-9.0</br>
+古いフレームワークでの動作保証はしません。</br>defaultで9.0です。
 
 # 設計パターン
 Dependency Injection
