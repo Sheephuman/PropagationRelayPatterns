@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropagationRelayPatterns", "PropagationRelayPatterns\PropagationRelayPatterns.csproj", "{D05C5713-3AD2-4945-A444-9A2B04639383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropagationByAbstractTemplate", "PropagationByAbstractTemplate\PropagationByAbstractTemplate.csproj", "{8BDEAE7C-01B4-4D34-BFF1-4D0B8E246CD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D05C5713-3AD2-4945-A444-9A2B04639383}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D05C5713-3AD2-4945-A444-9A2B04639383}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D05C5713-3AD2-4945-A444-9A2B04639383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BDEAE7C-01B4-4D34-BFF1-4D0B8E246CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BDEAE7C-01B4-4D34-BFF1-4D0B8E246CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BDEAE7C-01B4-4D34-BFF1-4D0B8E246CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BDEAE7C-01B4-4D34-BFF1-4D0B8E246CD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
