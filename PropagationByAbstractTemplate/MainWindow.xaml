@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PropagationByAbstractTemplate"
         mc:Ignorable="d"
         Title="MainWindow" Height="650" Width="800"
-        Loaded="Window_Loaded">
+        >
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="611*"/>
@@ -22,29 +22,33 @@
         <!-- アニメーション選択ボタン群 -->
         <StackPanel Orientation="Horizontal" Margin="0,0,0,10" Grid.ColumnSpan="3">
             <Button x:Name="ButtonA" Content="🐑 処理A：羊アニメ" Width="130" Height="35" Margin="0,0,10,0"
-                Click="ButtonA_Click"/>
+               Command="{Binding ACommand}" />
             <Button x:Name="ButtonB" Content="🐤 処理B：鳥のアニメーション" Width="130" Height="35" Margin="0,0,10,0"
-                Click="ButtonB_Click"/>
+            Command="{Binding BCommand}" 
+                />
             <Button x:Name="ButtonC" Content="🐬 処理C：イルカのアニメーション" Width="130" Height="35" Margin="0,0,10,0"
-                Click="ButtonC_Click"/>
+            Command="{Binding CCommand}" 
+                />
 
         </StackPanel>
 
         <!-- 実行系ボタン -->
         <StackPanel Orientation="Horizontal" Margin="0,0,0,10" Grid.Row="1" Grid.ColumnSpan="3">
-            <Button x:Name="ExecuteButton" Content="▶ 実行" Width="100" Height="35" Click="ExecuteButton_Click"/>
-            <Button x:Name="StopButton" Content="⏹ Pause" Width="100" Height="35" Margin="10,0,0,0"
-                Click="PauseButton_Click"/>
+            <Button x:Name="ExecuteButton" Content="▶ 実行" Width="100" Height="35" Command = "{Binding ExecuteCommand}"/>
+            <Button x:Name="StopButton" Content="⏹ Pause" Width="100" Height="35" Margin="10,0,0,0" 
+            Command= "{Binding PauseCommand}"/>
             <Button x:Name="Resume" Content="▶Resume" Width="100" Height="35" Margin="10,0,0,0"
-        Click="ResumeButton_Click"/>
-            <TextBlock x:Name="StatusText"
-                   Foreground="LightGray"
+                  Command = "{Binding ResumeCommand}"/>
+                <TextBlock x:Name="StatusText"
+                   Foreground="Black"
+                   FontSize="30"
                    VerticalAlignment="Center"
                    Margin="20,0,0,0"
-                   Text="処理未選択"/>
+                   Text="{Binding StatusString}"/>
         </StackPanel>
+    
 
-        <!-- 出力表示 -->
+    <!-- 出力表示 -->
 
         <TextBox Grid.Row="2"  Background="#222" x:Name="TextOutput"
                    FontFamily="Consolas"
